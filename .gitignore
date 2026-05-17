@@ -1,0 +1,19 @@
+# --- CLion / JetBrains ---
+.idea/
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+
+# --- Pliki binarne i kompilacja ---
+*.exe
+*.obj
+*.o
+*.pdb
+*.dll
+*.lib
+
+# --- Systemowe ---
+.DS_Store
+Thumbs.db
+
+
