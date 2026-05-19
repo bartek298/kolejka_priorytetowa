@@ -11,10 +11,10 @@ using namespace chrono;
 // Struktura reprezentująca element w kolejce priorytetowej
 struct Element {
     int value;
-    int priority; // Załóżmy: wyższa liczba = wyższy priorytet
+    int priority; // wyższa liczba = wyższy priorytet
 };
 
-// --- 1. KOLEJKA PRIORYTETOWA NA LIŚCIE WIĄZANEJ (Posortowana) ---
+// --- 1. KOLEJKA PRIORYTETOWA NA LIŚCIE WIĄZANEJ (Posortowana) 
 struct Node {
     Element data;
     Node* next;
@@ -102,7 +102,7 @@ public:
 
     // Modyfikacja priorytetu określonego elementu (wyszukiwanego po wartości)
     void changePriority(int val, int newPriority) {
-        // Najbezpieczniejsza metoda w liście posortowanej: usuń stary i dodaj nowy z nowym priorytetem
+        //  usuń stary i dodaj nowy z nowym priorytetem
         Node* temp = head;
         Node* prev = nullptr;
         bool found = false;
@@ -130,7 +130,7 @@ public:
 };
 
 
-// --- 2. KOLEJKA PRIORYTETOWA NA TABLICY DYNAMICZNEJ (Posortowana) ---
+// --- 2. KOLEJKA PRIORYTETOWA NA TABLICY DYNAMICZNEJ (Posortowana) 
 class PriorityQueueArray {
 private:
     Element* data;
